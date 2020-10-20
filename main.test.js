@@ -75,9 +75,12 @@ describe('darkAndStormyNight', () => {
     const rainfall2 = 0.4;
     const brightness3 = 'darkest';
     const rainfall3 = 0.49;
+    const brightness4 = 'DARK';
+    const rainfall4 = 0.5;
     expect(darkAndStormyNight(brightness1, rainfall1)).toBe(`My usual opening doesn't apply, I guess.`)
     expect(darkAndStormyNight(brightness2, rainfall2)).toBe(`My usual opening doesn't apply, I guess.`)
     expect(darkAndStormyNight(brightness3, rainfall3)).toBe(`My usual opening doesn't apply, I guess.`)
+    expect(darkAndStormyNight(brightness4, rainfall4)).toBe(`My usual opening doesn't apply, I guess.`)
   })
 
   it("return `My usual opening doesn't apply, I guess.` if the string isn't `dark` OR the rainfall is less than or equal to `0.5`", () => {
